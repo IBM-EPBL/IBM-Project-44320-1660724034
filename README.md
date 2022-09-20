@@ -1,7 +1,6 @@
 # IBM-Project-44320-1660724034
-                                                  EXPLORATORY ANALYSIS OF RAINFALL DATA IN INDIA FOR AGRICULTURE
+                              EXPLORATORY ANALYSIS OF RAINFALL DATA IN INDIA FOR AGRICULTURE
                                                   
-  
   TECHNOLOGY: APPLIED DATA SCIENCE
   
   TEAM NAME : PINK PANTHERS
