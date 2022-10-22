@@ -1,4 +1,7 @@
 # IBM-Project-44320-1660724034
+
+                                                    ![rain](https://user-images.githubusercontent.com/106475416/197338804-e9df1967-4c34-4981-9f5a-c9175f2ffbe7.png)
+
                               EXPLORATORY ANALYSIS OF RAINFALL DATA IN INDIA FOR AGRICULTURE
                                                   
   TECHNOLOGY: APPLIED DATA SCIENCE
