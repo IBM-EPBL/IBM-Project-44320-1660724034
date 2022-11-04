@@ -12,13 +12,8 @@
   
   TEAM MEMBERS:
   
-  TEAM LEADER:     AKSHAYA.V
-  
-  TEAM MEMBER1:    PRIYADHARSHINI.J
-  
-  TEAM MEMBER2:    SANTHINI DEVI.S
-  
-  TEAM MEMBER3:    SWATHIKA.G
+ ![team1](https://user-images.githubusercontent.com/106475416/199890792-0553297c-35ac-4dc9-b658-5a195a1e2928.png)
+
   
   PROJECT PREVIEW:
                 
