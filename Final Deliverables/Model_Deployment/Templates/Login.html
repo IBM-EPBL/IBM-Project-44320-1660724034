@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN HERE!!!</title>
+        <!--link href="../Static/css/bootstrap.min.css" rel="Stylesheet" type="text/css">
+        <link href="../Static/css/Style.css" rel="Stylesheet" type="text/css"-->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"  rel= "stylesheet"text='text/css'/>
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
+        <style>
+            .wr{
+                background-color: rgb(250, 150, 175); margin:0% 0% 3% -7%; padding: 1.5%;text-align: center;
+            }
+        </style>    
+    </head>
+    <body class="bg-info">
+        <div class="card" style="max-width:50%; margin:2% 2% 2% 20%;border-radius: 25px; ">
+            <div class="row">
+                <div class="col-6"><img class="card-img-top"  src="{{ url_for('static', filename='image/rainy.png') }}" alt="Card image cap"style="border-radius: 25px 25px 25px 25px;margin:-0.3%;"></div>
+                <div class="col-6">
+                    <h1 style="padding-left:20%;font-size:400%;">LOGIN</h1>
+                    <br>
+                    <div class="form-group">
+                        <p class={{wrong[1]}}>{{wrong[0]}}</p>
+                    </div>
+                    <form method="post" action="{{ url_for('welcome') }}">
+                        <div class="form-group w-75">
+                            <label for="email" style="color:blue;"><b>Email</b></label>
+                            <input type="email" style="margin:5%; border-radius:13px;" class="form-control border-primary" id="email" placeholder="Enter your Email" name="email">
+                        </div>
+                        <div class="form-group w-75">
+                            <label for="password" style="color:blue;"><b>Password</b></label>
+                            <input type="password" style="margin:5%; border-radius: 13px;" class="form-control border-primary" id="pass" placeholder="Enter your Password" name="password"><br>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-left:30%; padding:3% 10% 3% 10%; border-radius: 15px; ">Login</button>
+                    </form>
+                    <br>
+                    <div>
+                        <p style="color:blue; margin-left: 40%;"><b>OR</b></p>
+                        <p style="color:grey; margin-left: 20%;">Don't have an account ?</p>
+                        <a href="signin" style="text-decoration:none;color:blue; margin-left: 40%;"><b>SignUp</b></a>
+                    </div>
+                </div>
+        
+    </body>
+</html>
