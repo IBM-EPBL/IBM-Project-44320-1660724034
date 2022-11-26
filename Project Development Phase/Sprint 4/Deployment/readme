@@ -12,4 +12,5 @@ PYTHON PACKAGES TO BE IMPORTED:
                      pandas
                      pip
                      raincloudy
+                     requests
                      static
