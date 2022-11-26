@@ -1,0 +1,15 @@
+                                            EXPLORATORY ANALYSIS OF RAIN FALL DATA IN INDIA FOR AGRICULTURE
+                                                                TEAM ID: PNT2022TMID46353
+                                                              
+PYTHON PACKAGES TO BE IMPORTED:
+                     Flask
+                     geocoder
+                     geolocation-python
+                     geolocator
+                     geopy
+                     home
+                     numpy
+                     pandas
+                     pip
+                     raincloudy
+                     static
