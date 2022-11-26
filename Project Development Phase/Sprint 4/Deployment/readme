@@ -3,9 +3,13 @@
                                                               
 PYTHON PACKAGES TO BE IMPORTED:
                      Flask
-                     Pandas
-                     Numpy
-                     Static
-                     Home
-                     Geopy
-                     
+                     geocoder
+                     geolocation-python
+                     geolocator
+                     geopy
+                     home
+                     numpy
+                     pandas
+                     pip
+                     raincloudy
+                     static
