@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME PAGE!!!</title>
+        <!--link href="../Static/css/bootstrap.min.css" rel="Stylesheet" type="text/css">
+        <link href="../Static/css/Style.css" rel="Stylesheet" type="text/css"-->  
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"  rel= "stylesheet"text='text/css'/>
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css'>      
+    </head>
+    <body class="bg-info">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light"> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="navbar-brand" href="#" style="color:green ;"><b>WEATHER DASHBOARD</b></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item active" Style="border-bottom: 4px solid blue;">
+                            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="rainfall">Rainfall Prediction</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-10"><p id="time" style="font-size: 50px;">12.00<span id="am-pm">PM</span></p></div>
+                <div class="col-2"><h3 class="time-zone" id="time-zone">Asia/Kolkata</h3>{{city}}<div id="country" class="country">IN</div></div>
+                <div class="col-4">
+                    <div class="card" Style="border-radius: 25px; padding:2%;">
+                        <div class="row">
+                            <div class="col-12" id="date" style="font-size:25px;">Monday, 25 May</div>
+                            <div class="col-8"><div id="current-weather-icon"></div></div>
+                            <div class="col-4"><div id="current-weather-items"></div></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-8"><br><br><br></div>
+                <div class="col-12"><br><br><br></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date0" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon0"></div></div>
+                        <div class="col-6"><div id="current-weather-items0"></div></div>
+                    </div>
+            </div>  
+                <div class="col-3">
+                        <div class="row">
+                            <div class="col-12" id="date1" style="font-size:25px;">Monday, 25 May</div>
+                            <div class="col-6"><div id="current-weather-icon1"></div></div>
+                            <div class="col-6"><div id="current-weather-items1"></div></div>
+                        </div>
+                </div>  
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date2" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon2"></div></div>
+                        <div class="col-6"><div id="current-weather-items2"></div></div>
+                    </div>
+                </div>    
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date3" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon3"></div></div>
+                        <div class="col-6"><div id="current-weather-items3"></div></div>
+                    </div>
+                </div>
+                <div class="col-12"><br><br></div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date4" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon4"></div></div>
+                        <div class="col-6"><div id="current-weather-items4"></div></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date5" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon5"></div></div>
+                        <div class="col-6"><div id="current-weather-items5"></div></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date6" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon6"></div></div>
+                        <div class="col-6"><div id="current-weather-items6"></div></div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-12" id="date7" style="font-size:25px;">Monday, 25 May</div>
+                        <div class="col-6"><div id="current-weather-icon7"></div></div>
+                        <div class="col-6"><div id="current-weather-items7"></div></div>
+                    </div>
+                </div>
+                
+                
+                </div>         
+                </div>      
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script href="../Static/css/bootstrap.bundle.min.js"></script>
+        <script src="{{ url_for('static', filename='script/forecast.js') }}"></script>
+        
+    </body>
+</html>
