@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WELCOME PAGE!!!</title>
+        <!--link href="../Static/css/bootstrap.min.css" rel="Stylesheet" type="text/css">
+        <link href="../Static/css/Style.css" rel="Stylesheet" type="text/css"-->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"  rel= "stylesheet"text='text/css'/>
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />    
+        <style>
+            body{
+                background-image:url("{{ url_for('static', filename='image/home.jpg')}}");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+        </style> 
+    </head>
+    <body>
+  <center>  <h1 style="color: white; font-size:200%; margin:20% 22% 2% 22%";>Exploratory Analysis of RainFall Data in India for Agriculture</h1></center>
+      <center>  <h1 style="color: white; font-size:200%; padding: 5%;"> "TODAY'S RAINFALL IS TOMMORROW'S LIFELINE"</h1></center>
+        <form  method="post" action="{{ url_for('home') }}">
+            <div id='geo'>
+                <input type="hidden" id='lat' name="lat"/>
+                <input type="hidden" id='lon' name="lon"/>
+                <button type="submit" class="btn btn-primary" style="margin:0% 0% 0% 45%; font-size: 120%;">Let's Begin</button>
+              </div>
+        </form>
+        <script>
+            window.onload=function(){
+                var x = document.getElementById("lat");
+                var y = document.getElementById("lon");
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+
+            function showPosition(position) {
+            x.value=position.coords.latitude;
+            y.value=position.coords.longitude;
+            }	
+            }
+        </script>
+    </body>
+</html>
